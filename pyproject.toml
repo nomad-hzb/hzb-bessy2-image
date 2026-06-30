@@ -28,7 +28,7 @@ repository = "https://github.com/nomad-hzb/hzb-bessy2-image"
 [project.optional-dependencies]
 # Add your plugins to the list below.
 plugins = [
- "nomad-north-jupyter>=0.2.5"
+ "nomad-north-jupyter>=0.2.6"
 ]
 jupyter = ["jupyter-events"]
 gpu-action = []

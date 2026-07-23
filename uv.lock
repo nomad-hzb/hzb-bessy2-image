@@ -3760,6 +3760,7 @@ jupyter = [
 plugins = [
     { name = "nomad-baseclasses" },
     { name = "nomad-hzb-emil" },
+    { name = "nomad-north-jupyter" },
     { name = "pynxtools" },
     { name = "pynxtools-ellips" },
     { name = "pynxtools-em" },
@@ -3785,6 +3786,7 @@ requires-dist = [
     { name = "nomad-hzb-emil", marker = "extra == 'plugins'", git = "https://github.com/nomad-hzb/nomad-hzb-emil.git" },
     { name = "nomad-lab", extras = ["dev", "infrastructure", "parsing"], marker = "extra == 'dev'", specifier = "==1.4.2" },
     { name = "nomad-lab", extras = ["infrastructure", "parsing"], specifier = "==1.4.2" },
+    { name = "nomad-north-jupyter", marker = "extra == 'plugins'", specifier = ">=0.2.6" },
     { name = "plotly", specifier = "<6.0" },
     { name = "pynxtools", marker = "extra == 'plugins'", specifier = "==0.15.0" },
     { name = "pynxtools-ellips", marker = "extra == 'plugins'", specifier = ">=0.1.1" },
@@ -3905,6 +3907,18 @@ infrastructure = [
     { name = "uvicorn", extra = ["standard"] },
     { name = "validators" },
     { name = "zipstream-ng" },
+]
+
+[[package]]
+name = "nomad-north-jupyter"
+version = "0.2.6"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+dependencies = [
+    { name = "nomad-lab" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/19/97/4dc44543907bd9a1259b5daf33c02409180c81090bf84b7bde227c84a213/nomad_north_jupyter-0.2.6.tar.gz", hash = "sha256:9f3fb5668c19ba9225cd6dd5c3f353083c2fdf44c08f8f54b654b77c35e8dc61", size = 114640, upload-time = "2026-06-29T15:24:46.314Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/01/96/43675168cf18b66884b71c49111d81f8677f4f8e459ce99d12dcc5451a1b/nomad_north_jupyter-0.2.6-py3-none-any.whl", hash = "sha256:c4b708e2c7032792b7e363aaab308c89512f561accd3c90745b93096a4b14b77", size = 14526, upload-time = "2026-06-29T15:24:44.966Z" },
 ]
 
 [[package]]

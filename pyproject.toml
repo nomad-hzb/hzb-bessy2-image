@@ -33,6 +33,7 @@ repository = "https://github.com/nomad-hzb/hzb-bessy2-image"
 plugins = [
   'nomad-baseclasses @ git+https://github.com/nomad-hzb/nomad-baseclasses.git',
   'nomad-hzb-emil @ git+https://github.com/nomad-hzb/nomad-hzb-emil.git',
+  "nomad-north-jupyter>=0.2.6",
   "pynxtools==0.15.0",
   #"pynxtools==0.12.0",
   "pynxtools-ellips>=0.1.1",

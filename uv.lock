@@ -3793,7 +3793,7 @@ requires-dist = [
     { name = "pynxtools-em", marker = "extra == 'plugins'", specifier = ">=0.4.2" },
     { name = "pynxtools-raman", marker = "extra == 'plugins'", specifier = ">=0.1.1" },
     { name = "pynxtools-xps", marker = "extra == 'plugins'", specifier = ">=0.5.4" },
-    { name = "pynxtools-xrd", marker = "extra == 'plugins'", specifier = ">=0.0.7" },
+    { name = "pynxtools-xrd", marker = "extra == 'plugins'", specifier = ">=0.0.8" },
     { name = "pyvis", marker = "extra == 'jupyter'" },
     { name = "seaborn", marker = "extra == 'jupyter'" },
     { name = "setuptools" },
@@ -5306,16 +5306,19 @@ wheels = [
 
 [[package]]
 name = "pynxtools-xrd"
-version = "0.0.7"
+version = "0.0.8"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "fairmat-readers-xrd" },
+    { name = "flatdict" },
+    { name = "numpy", version = "1.26.4", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "numpy", version = "2.3.5", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "pynxtools" },
     { name = "xmltodict" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/91/df/8b6ead1da8a081e4bcfd015e90a212cd65f01d721b8173f77f21017008b6/pynxtools_xrd-0.0.7.tar.gz", hash = "sha256:9fe27c89935150b46ab65f32537ab186969c88ca231dfd300f66b4a84f62f169", size = 224273, upload-time = "2025-10-18T10:49:48.152Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e2/cf/d4b09bbfbd1c0fde3286a7d4c267fef83d29124d87c04722535e800d53ad/pynxtools_xrd-0.0.8.tar.gz", hash = "sha256:0c2b04fa7ab1425218b607542293072d81157eb4a069a334a30c158f24a0aac4", size = 11014, upload-time = "2026-03-20T22:22:01.804Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8b/bc/ab3323a285c51cb43a369e68639befbc2c27cf4a860aaca195b6560dad27/pynxtools_xrd-0.0.7-py3-none-any.whl", hash = "sha256:a2eb954c83cb2b6f7d227ed8e56e6d26fa1b6dda3f18743f21bff180906fcd28", size = 14832, upload-time = "2025-10-18T10:49:46.51Z" },
+    { url = "https://files.pythonhosted.org/packages/6c/de/c7d03d11b2d0652379dcf8abc904cd13862e4ac929b30646442b452ef242/pynxtools_xrd-0.0.8-py3-none-any.whl", hash = "sha256:5e870cd0ebe3f0d88c50e461ef5fb4fb2fb1dc538961b32ae65191f93996f646", size = 15623, upload-time = "2026-03-20T22:22:00.242Z" },
 ]
 
 [[package]]

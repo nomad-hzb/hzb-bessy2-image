@@ -40,7 +40,7 @@ plugins = [
   "pynxtools-em>=0.4.2",
   "pynxtools-raman>=0.1.1",
   "pynxtools-xps>=0.5.4",
-  "pynxtools-xrd>=0.0.7",
+  "pynxtools-xrd>=0.0.8",
 ]
 jupyter = [
 'voila',

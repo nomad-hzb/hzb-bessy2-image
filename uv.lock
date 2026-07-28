@@ -3791,7 +3791,7 @@ requires-dist = [
     { name = "pynxtools", marker = "extra == 'plugins'", specifier = "==0.15.0" },
     { name = "pynxtools-ellips", marker = "extra == 'plugins'", specifier = ">=0.1.1" },
     { name = "pynxtools-em", marker = "extra == 'plugins'", specifier = ">=0.4.2" },
-    { name = "pynxtools-raman", marker = "extra == 'plugins'", specifier = ">=0.1.1" },
+    { name = "pynxtools-raman", marker = "extra == 'plugins'", specifier = ">=0.1.3" },
     { name = "pynxtools-xps", marker = "extra == 'plugins'", specifier = ">=0.5.4" },
     { name = "pynxtools-xrd", marker = "extra == 'plugins'", specifier = ">=0.0.7" },
     { name = "pyvis", marker = "extra == 'jupyter'" },
@@ -5278,16 +5278,16 @@ wheels = [
 
 [[package]]
 name = "pynxtools-raman"
-version = "0.1.1"
+version = "0.1.3"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "gemmi" },
     { name = "pynxtools" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/27/d5/3aab0e4b7e67e8a0858d8b7b7758bf1b82387a79c7a85fa6c08610170042/pynxtools_raman-0.1.1.tar.gz", hash = "sha256:59aff7b472b578aa95b31c7f80528abb7fe81c52aa24d981769ec84ab5ece999", size = 20098, upload-time = "2025-10-17T16:44:33.452Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/18/ba/a670d5e224aca8afb8834463ee255ba342a92ea19ea0f75a4efcc5bb2c09/pynxtools_raman-0.1.3.tar.gz", hash = "sha256:a021192e72929d4d3ffb058b8af0e9de8a011aa5a813ec44700ac241dd9a79ef", size = 20145, upload-time = "2026-04-09T08:13:46.884Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/63/90/6d3cbe092dbadf241c7f32485f93c066bd6248c47b42f67a8814ceb1da74/pynxtools_raman-0.1.1-py3-none-any.whl", hash = "sha256:6fe3124b631dee8cef7a01e8e48e44a30a9f5d933bfb618a7a4c51e9fd487c77", size = 26950, upload-time = "2025-10-17T16:44:32.091Z" },
+    { url = "https://files.pythonhosted.org/packages/52/19/b165a082e46afb2d6a14ee92942d7ce94144481cc921a2040f4292ea7fd7/pynxtools_raman-0.1.3-py3-none-any.whl", hash = "sha256:278f0c8c6161f125be5b0db0f40b00830eb49db97879f5ebbfa192cd8320beec", size = 27992, upload-time = "2026-04-09T08:13:45.44Z" },
 ]
 
 [[package]]

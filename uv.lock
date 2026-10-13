@@ -4163,6 +4163,7 @@ jupyter = [
 ]
 plugins = [
     { name = "nomad-baseclasses" },
+    { name = "nomad-gui" },
     { name = "nomad-hzb-emil" },
     { name = "nomad-north-jupyter" },
     { name = "pynxtools" },
@@ -4187,6 +4188,7 @@ requires-dist = [
     { name = "jupyterlab-h5web", marker = "extra == 'jupyter'" },
     { name = "lmfit", marker = "extra == 'jupyter'" },
     { name = "nomad-baseclasses", marker = "extra == 'plugins'", git = "https://github.com/nomad-hzb/nomad-baseclasses.git" },
+    { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0rc2" },
     { name = "nomad-hzb-emil", marker = "extra == 'plugins'", git = "https://github.com/nomad-hzb/nomad-hzb-emil.git" },
     { name = "nomad-lab", extras = ["dev", "infrastructure", "parsing"], marker = "extra == 'dev'", specifier = "==1.4.3" },
     { name = "nomad-lab", extras = ["infrastructure", "parsing"], specifier = "==1.4.3" },
@@ -4204,6 +4206,24 @@ requires-dist = [
     { name = "voila", marker = "extra == 'jupyter'" },
 ]
 provides-extras = ["plugins", "jupyter", "dev"]
+
+[[package]]
+name = "nomad-gui"
+version = "2.0.0rc2"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "fastapi" },
+    { name = "filelock" },
+    { name = "httpx" },
+    { name = "nomad-lab", extra = ["infrastructure"] },
+    { name = "plotly" },
+    { name = "starlette" },
+]
+sdist = { url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/files/46b656b9c3dede471285ba87f03dc1dcda02421481b899c66d376c54bc3eadf0/nomad_gui-2.0.0rc2.tar.gz", hash = "sha256:46b656b9c3dede471285ba87f03dc1dcda02421481b899c66d376c54bc3eadf0" }
+wheels = [
+    { url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/files/7b536b45aeb97c87089724bcb6ddaf84d01a8d505005e2551cb85516c0646dea/nomad_gui-2.0.0rc2-py3-none-any.whl", hash = "sha256:7b536b45aeb97c87089724bcb6ddaf84d01a8d505005e2551cb85516c0646dea" },
+]
 
 [[package]]
 name = "nomad-hzb-emil"

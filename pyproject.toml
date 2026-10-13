@@ -41,6 +41,7 @@ plugins = [
   "pynxtools-raman>=0.1.1",
   "pynxtools-xps>=0.5.4",
   "pynxtools-xrd>=0.0.7",
+  "nomad-gui==2.0.0rc2"
 ]
 jupyter = [
 'voila',

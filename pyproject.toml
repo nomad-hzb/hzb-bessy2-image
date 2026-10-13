@@ -23,7 +23,8 @@ license = { file = "LICENSE" }
 dependencies = [
   "nomad-lab[parsing, infrastructure]==1.4.3",
   "setuptools",
-  "plotly<6.0"
+  "plotly<6.0",
+  "nomad-gui==2.0.0a2.dev583"
   ]
 
 [project.urls]

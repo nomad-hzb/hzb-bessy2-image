@@ -24,7 +24,7 @@ dependencies = [
   "nomad-lab[parsing, infrastructure]==1.4.3",
   "setuptools",
   "plotly<6.0",
-  "nomad-gui==2.0.0a2.dev583"
+  "nomad-gui==2.0.0rc2"
   ]
 
 [project.urls]

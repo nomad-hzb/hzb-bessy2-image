@@ -4136,6 +4136,7 @@ dependencies = [
 name = "nomad-distribution"
 source = { editable = "." }
 dependencies = [
+    { name = "nomad-gui" },
     { name = "nomad-lab", extra = ["infrastructure"] },
     { name = "plotly" },
     { name = "setuptools" },
@@ -4188,6 +4189,7 @@ requires-dist = [
     { name = "jupyterlab-h5web", marker = "extra == 'jupyter'" },
     { name = "lmfit", marker = "extra == 'jupyter'" },
     { name = "nomad-baseclasses", marker = "extra == 'plugins'", git = "https://github.com/nomad-hzb/nomad-baseclasses.git" },
+    { name = "nomad-gui", specifier = "==2.0.0rc2" },
     { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0rc2" },
     { name = "nomad-hzb-emil", marker = "extra == 'plugins'", git = "https://github.com/nomad-hzb/nomad-hzb-emil.git" },
     { name = "nomad-lab", extras = ["dev", "infrastructure", "parsing"], marker = "extra == 'dev'", specifier = "==1.4.3" },

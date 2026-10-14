@@ -60,7 +60,8 @@ jupyter = [
 'seaborn',
 'ipykernel<7','ipython<9'
 ]
-dev = ["nomad-lab[parsing, infrastructure, dev]==1.4.3"]
+dev = ["nomad-lab[infrastructure, dev]==2.0.0rc1"]
+#dev = ["nomad-lab[parsing, infrastructure, dev]==1.4.3"]
 
 [tool.uv]
 extra-index-url = [

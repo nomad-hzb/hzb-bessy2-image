@@ -21,7 +21,8 @@ readme = "README.md"
 requires-python = ">=3.10, <3.13"
 license = { file = "LICENSE" }
 dependencies = [
-  "nomad-lab[parsing, infrastructure]==1.4.3",
+  "nomad-lab[infrastructure]==2.0.0rc1",
+  #"nomad-lab[parsing, infrastructure]==1.4.3",
   "setuptools",
   "plotly<6.0",
   "nomad-gui==2.0.0rc2"

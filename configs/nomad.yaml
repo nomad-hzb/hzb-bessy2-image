@@ -1,6 +1,9 @@
 services:
-  api_host: "localhost"
-  api_base_path: "/nomad-oasis"
+  api_port: 80
+  api_base_path: "/backend"
+  upload_limit: 1000
+  upload_members_group_search_enabled: true
+  https: true
 
 oasis:
   is_oasis: true
@@ -12,10 +15,31 @@ plugins:
       nomad_north_jupyter.north_tools:jupyter:
         north_tool:
           image: ghcr.io/nomad-hzb/hzb-bessy2-image/jupyter:main
+      nomad_north_voila.north_tools:voila:
+        north_tool:
+          image: ghcr.io/nomad-hzb/hzb-bessy2-image/jupyter:main
+    # We only include our schema here. Without the explicit include, all plugins will be
+    # loaded. Many build in plugins require more dependencies. Install nomad-lab[parsing]
+    # to make all default plugins work.
+    include: [
+      "nomad_hzb_emil.schema_packages:emil_package_entry_point",
+      "nomad_hzb_emil.parsers:emil_general_process_parser",
+      "nomad_hzb_emil.apps:emil_lab_voila_app",
+      "nomad_hzb_emil.apps:emil_eln_app",
+      "nomad_hzb_emil.apps:scala_eln_app",
+      "pynxtools.nomad.apps:nexus_app",
+      "pynxtools.nomad.schema_packages:nexus_data_converter",
+      "pynxtools.nomad.parsers:nexus_parser",
+      "pynxtools.nomad.schema_packages:nexus_schema",
+      "pynxtools.nomad.example_uploads:simple_nexus_example",
+      #"nomad-gui==2.0.0rc2"
+      #"nomad_gui.apis:gui_api"
+      "nomad_north_jupyter.north_tools:jupyter",
+      "nomad_north_voila.north_tools:voila",
+    ]
 
 meta:
   deployment: "oasis"
-  deployment_url: "https://my-oasis.org/api"
   maintainer_email: "me@my-oasis.org"
 
 logstash:
@@ -30,3 +54,7 @@ mongo:
 elastic:
   entries_index: nomad_oasis_entries_v1
   materials_index: nomad_oasis_materials_v1
+
+north:
+  enabled: true
+  enable_new_hub_api: true

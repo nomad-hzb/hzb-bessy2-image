@@ -14,7 +14,7 @@ on:
 env:
   REGISTRY: ghcr.io
   UV_VERSION: 0.9
-  PYTHON_VERSION: 3.12
+  PYTHON_VERSION: 3.11
   JUPYTER_VERSION: "2025-04-14"
   # By default, no documentation is built and the official docs at https://docs.nomad-lab.eu are used.
   # If you want to include custom documentation, create a fork of https://github.com/FAIRmat-NFDI/nomad-docs.git
